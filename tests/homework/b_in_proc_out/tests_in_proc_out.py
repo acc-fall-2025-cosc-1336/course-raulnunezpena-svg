@@ -4,7 +4,6 @@ from src.homework.b_in_proc_out.in_proc_out import (
 )
 
 class TestRestaurantBill(unittest.TestCase):
-
     def test_get_sales_tax_amount(self):
         self.assertAlmostEqual(get_sales_tax_amount(100), 6.75, places=2)
 
@@ -18,5 +17,6 @@ class TestRestaurantBill(unittest.TestCase):
         self.assertAlmostEqual(receipt["tip"], 20.0, places=2)
         self.assertAlmostEqual(receipt["total"], 126.75, places=2)
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()
+
