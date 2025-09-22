@@ -1,5 +1,5 @@
 import unittest
-from src.homework.b_in_proc_out.in_proc_out import (
+from src.homework.b_in_proc_out.b_in_proc_out import (
     get_sales_tax_amount, get_tip_amount, calculate_total
 )
 
