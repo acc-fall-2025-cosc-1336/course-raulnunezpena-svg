@@ -25,6 +25,12 @@ def main():
                 print("D")
             case n if 0 <= n < 60:
                 print("F")
-            case _:
-                print("Invalid grade")        
+   else: print("Number out of range")
+
+    elif choice == '3':
+        print("Goodbye!")
+
+else("invalid choice. Please select a valid option.")
+
+if __name__ == "__main__":
       
