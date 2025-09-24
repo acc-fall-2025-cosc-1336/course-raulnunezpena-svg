@@ -4,5 +4,6 @@ def main():
     print("Main Menu")
     print("1. Get Letter Grade")
     print("2.letter grade using switch")
-    priny("3. Exit")
-    
+    print("3. Exit")
+
+    choice = input("Enter your choice (1-3): ") 
