@@ -7,7 +7,7 @@ def get_letter_grade(numerical_grade:int)->str:
         return "C"
     elif numerical_grade >= 60:
         return "D"
-    else:
+    elif numerical_grade >=59:
         return "F"
     else:
         return "Invalid grade"
