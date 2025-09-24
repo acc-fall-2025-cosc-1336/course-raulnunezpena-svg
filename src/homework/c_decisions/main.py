@@ -25,12 +25,14 @@ def main():
                 print("D")
             case n if 0 <= n < 60:
                 print("F")
-   else: print("Number out of range")
+            case _:
+                print("Number out of range")
 
     elif choice == '3':
         print("Goodbye!")
 
-else("invalid choice. Please select a valid option.")
+    else:
+        print("Invalid choice. Please select a valid option.")
 
 if __name__ == "__main__":
-      
+    main()
