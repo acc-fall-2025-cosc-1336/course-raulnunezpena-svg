@@ -1,4 +1,4 @@
-from src.homework.c_decisions.decisions import get_letter_grade
+from decisions import get_letter_grade
 
 def main():
     print("MAIN MENU")
