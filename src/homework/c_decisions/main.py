@@ -1,38 +1,17 @@
-from src.homework.c_decisions.decisions import get_letter_grade
+
+from src.homework.c_decisions.decisions import get_options_ratio, get_faculty_rating
 
 def main():
-    print("Main Menu")
-    print("1. Get Letter Grade")
-    print("2.letter grade using switch")
-    print("3. Exit")
-
-    choice = input("Enter your choice (1-3): ") 
-  
-    if choice == '1':
-        num= int(input("Enter numerical grade:(0-100) "))
-        print(get_letter_grade(num)if 0<=num<=100 else "Invalid grade")
-
-    elif choice == '2':
-        num= int(input("Enter numerical grade:(0-100) "))
-        match num:
-            case n if 90 <= n <= 100:
-                print("A")
-            case n if 80 <= n < 90:
-                print("B")
-            case n if 70 <= n < 80:
-                print("C")
-            case n if 60 <= n < 70:
-                print("D")
-            case n if 0 <= n < 60:
-                print("F")
-            case _:
-                print("Number out of range")
-
-    elif choice == '3':
-        print("Goodbye!")
-
-    else:
-        print("Invalid choice. Please select a valid option.")
+    print("Faculty Rating Calculator")
+    try:
+        options = float(input("Enter the number of 'options' (e.g., favorable responses): ").strip())
+        total = float(input("Enter the total number: ").strip())
+        ratio = get_options_ratio(options, total)
+        rating = get_faculty_rating(ratio)
+        print(f"\nRatio: {ratio:.4f}")
+        print(f"Rating: {rating}")
+    except ValueError as e:
+        print(f"Input error: {e}")
 
 if __name__ == "__main__":
     main()
