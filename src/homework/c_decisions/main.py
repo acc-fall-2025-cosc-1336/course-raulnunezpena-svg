@@ -1,5 +1,5 @@
 
-from src.homework.c_decisions.decisions import get_options_ratio, get_faculty_rating
+from decisions import get_options_ratio, get_faculty_rating
 
 def main():
     print("Faculty Rating Calculator")
