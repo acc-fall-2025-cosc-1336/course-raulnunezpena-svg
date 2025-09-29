@@ -1,4 +1,4 @@
-import pytest
+import tests_decisions
 from run_tests import *
 
 # Since run_tests.py is empty, there are no functions or classes to test.
