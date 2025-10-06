@@ -1,10 +1,8 @@
 # tests/homework/d_repetition/tests_repetition.py
 import unittest
 
-from src.homework.d_repetition.repetition import(
-    get_factorial,
-    sum_odd_numbers,)
-
+from src.homework.d_repetition.repetition import( get_factorial, sum_odd_numbers)
+   
 
 class Test_Config(unittest.TestCase):
     # ------- get_factorial -------
@@ -28,7 +26,7 @@ class Test_Config(unittest.TestCase):
         with self.assertRaises(ValueError):
             get_factorial(3.2)
 
-    # ------- sum_odd_numbers -------
+    
     def test_sum_odds_1(self):
         self.assertEqual(sum_odd_numbers(1), 1)          # 1
 
