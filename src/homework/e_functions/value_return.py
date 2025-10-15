@@ -7,8 +7,7 @@ def get_gross_pay(hours, rate):
         raise ValueError("hours and rate must be non-negative")
     regular_hours = hours if hours <= 40 else 40
     overtime_hours = hours - 40 if hours > 40 else 0
-    gross = regular_hours * rate + overtime_hours * rate * 1.5
-    return gross
+    return regular_hours * rate + overtime_hours * rate * 1.5
 
 def get_fica_tax(gross_pay):
     """Compute FICA tax using global FICA_RATE on gross pay."""
