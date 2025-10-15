@@ -1,7 +1,7 @@
 import unittest
 
-if __name__ == "__main__":
-    loader = unittest.TestLoader()
-    tests = loader.discover('.', pattern='test_*.py')
-    runner = unittest.TextTestRunner(verbosity=2)
-    runner.run(tests)
+from tests.homework.e_functions import (tests_functions)
+
+suite = unittest.TestLoader().discover('tests/homework/e_functions')
+unittest.TextTestRunner().run(suite)
+# /src/homework/e_functions/void_func.py
