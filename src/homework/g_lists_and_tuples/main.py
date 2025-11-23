@@ -17,7 +17,10 @@ def run_option_1()
             again = input("do you want to add more values? (y/n): ")
             if again.lower() != 'y':
                 break
-            
+
+            lowest = get_lowest_list_value(value)
+            highest = get_highest_list_value(value)
+
         
 
 
