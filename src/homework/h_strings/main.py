@@ -3,6 +3,7 @@
 from strings import get_hamming_distance , get_dna_complement
 
 
+
 def main():
     while True:
         print("\n1-Hamming Distance")
