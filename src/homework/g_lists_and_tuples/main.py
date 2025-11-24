@@ -1,6 +1,7 @@
-from src.homework.g_lists_and_tuples import get_lowest_list_value, get_highest_list_value
+from lists import get_lowest_list_value
+from lists import get_highest_list_value
 
-def run_option_1()
+def run_option_1():
     value = []
 
     while True:
@@ -21,7 +22,7 @@ def run_option_1()
             lowest = get_lowest_list_value(value)
             highest = get_highest_list_value(value)
 
-            print("\nlist values:", value)
+            print("list values:", value)
             print("lowest value:", lowest)
             print("highest value:", highest)
             
@@ -40,6 +41,10 @@ def run_option_1()
                         break
                     else:
                         print("Invalid choice. Please enter 1 or 2.")
+
+    if __name__ == "__main__":
+        main()
+
 
         
 
