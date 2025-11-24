@@ -21,6 +21,26 @@ def run_option_1()
             lowest = get_lowest_list_value(value)
             highest = get_highest_list_value(value)
 
+            print("\nlist values:", value)
+            print("lowest value:", lowest)
+            print("highest value:", highest)
+            
+            def main():
+                while True:
+                    print("Select an option:")
+                    print("1. Enter list values to find lowest and highest")
+                    print("2. Exit")
+
+                    choice = input("Enter your choice (1 or 2): ")
+
+                    if choice == '1':
+                        run_option_1()
+                    elif choice == '2':
+                        print("Exiting the program.")
+                        break
+                    else:
+                        print("Invalid choice. Please enter 1 or 2.")
+
         
 
 
