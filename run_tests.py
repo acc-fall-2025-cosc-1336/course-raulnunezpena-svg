@@ -1,7 +1,10 @@
+# run_tests.py
+
 import unittest
-from tests.homework.g_lists_and_tuples import tests_lists_and_tuples as tests_strings
+from tests.homework.g_lists_and_tuples import tests_lists_and_tuples
 
 if __name__ == "__main__":
-    suite = unittest.TestLoader().loadTestsFromModule(tests_strings)
+    suite = unittest.TestLoader().loadTestsFromModule(tests_lists_and_tuples)
     unittest.TextTestRunner().run(suite)
-    
+
+
