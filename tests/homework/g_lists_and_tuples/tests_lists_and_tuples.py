@@ -1,4 +1,4 @@
-# tests/homework/g_lists_and_tuples/tests_lists_and_tuples.py
+
 
 import unittest
 from src.homework.g_lists_and_tuples.lists import get_p_distance, get_p_distance_matrix
